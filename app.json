@@ -2,5 +2,30 @@
     "pages": [
         "pages/home/home",
         "pages/about/about"
-    ]
+    ],
+    "sitemapLocation": "sitemap.json",
+    "window": {
+        "navigationBarBackgroundColor": "#f2f2f2",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "黄国栋的小程序",
+        "backgroundColor": "#ff0000",
+        "backgroundTextStyle": "light"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/home/home",
+                "text": "首页",
+                "iconPath": "./assets/tabbar/tabbar_home.png",
+                "selectedIconPath": "./assets/tabbar/tabbar_home_active.png"
+            },
+            {
+                "pagePath": "pages/about/about",
+                "text": "分类",
+                "iconPath": "./assets/tabbar/tabbar_catgory.png",
+                "selectedIconPath": "./assets/tabbar/tabbar_catgory_active.png"
+                }
+        ],
+        "selectedColor": "#ff0000"
+    }
 }
