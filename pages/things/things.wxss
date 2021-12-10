@@ -1,0 +1,13 @@
+/* pages/things/things.wxss */
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+}
+.outer{
+    display: flex;
+}
+.item{
+    flex: 1;
+    text-align: center;
+}

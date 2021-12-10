@@ -1,0 +1,28 @@
+<!-- 事件处理 -->
+<button bindtap="handleClick" size="mini">按钮</button>
+<button bind:tap="handleClick" size="mini">按钮</button>
+<button catch:tap="handleClick" size="mini">按钮</button>
+<!-- 常见事件 -->
+<view class="box"
+        bind:touchstart="handleTouch"
+        bind:touchmove="handleMove"
+        bind:touchend="handleEnd"
+        bind:longpress="handleLongPress">
+</view>
+<!-- 事件对象的分析 -->
+<!-- 每个事件都包含一个event对象，里面包含了很多关于该事件的信息 -->
+<!-- touches表示触摸的手指数量，changetouches表示触摸的手指的变化的数量 -->
+<!-- target记录产生事件的view currenttarget记录触发事件的view 一般在嵌套中才有区别 -->
+<button size="mini" bindtap="btnClick" >事件按钮</button>
+<!-- 事件参数的传递 -->
+<!-- 传递参数 不是直接在函数后面括号里传入参数，而是要用data- -->
+<!-- 格式：data-取名字=“{{要传的参数}}” -->
+<view class="outer">
+    <block wx:for='{{titles}}' wx:key="{{index}}">
+        <view class="item" 
+              bindtap="itemClick"
+              data-index="{{index}}"
+              data-item="{{item}}">{{item}}</view>
+    </block>
+</view>
+<!-- 事件冒泡和捕获 -->

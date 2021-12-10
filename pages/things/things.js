@@ -1,0 +1,30 @@
+Page({
+    data:{
+        titles:['衣服','裤子','鞋子'],
+        currentIndex:0
+    },
+    handleClick(){
+        console.log('---')
+    },
+    handleTouch(){
+        console.log('handleTouch')
+    },
+    handleMove(){
+        console.log('handleMove')
+    },
+    handleEnd(){
+        console.log('handleEnd')
+    },
+    handleLongPress(){
+        console.log('handleLongPress')
+    },
+    btnClick(e){
+        console.log('-------',e)
+    },
+    itemClick(e){
+        console.log('*******',e)
+        // 取出传过来的参数
+        console.log(e.currentTarget.dataset.index)
+        console.log(e.currentTarget.dataset.item)
+    }
+})

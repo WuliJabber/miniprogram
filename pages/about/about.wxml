@@ -1,2 +1,18 @@
 <!--pages/about/about.wxml-->
-<text>pages/about/about.wxml</text>
+<!-- <text>pages/about/about.wxml</text> -->
+<!-- view容器组件 类似div 块级元素 独占一行-->
+<view>haah </view>
+<view>hehe</view>
+<view><button>按钮</button></view>
+<!-- hover class  用户按下时 显示的样式 -->
+<view class="box1" hover-class="hover_class" hover-stay-time="1000">haha </view>
+<view>--------测试image组件---------</view>
+<!-- image默认会有一个宽和高 320*240 -->
+<!-- src 可以是本地地址，也可以是远程地址 -->
+<image src="https://tse3-mm.cn.bing.net/th/id/OIP-C.B6pZ8N_dG3MNAYppM-zX0AHaEo?pid=ImgDet&rs=1"/>
+<!-- 可以从手机选择图片 -->
+<button bindtap="choosePic">选择图片</button>
+<image src="{{imagePath}}"></image>
+<!-- 	show-menu-by-longpress 长按图片识别小程序码 -->
+<!-- mode 表示图片的缩放方式 -->
+<image src="/assets/image/WechatIMG37289.jpeg" show-menu-by-longpress mode="aspectFill"/>

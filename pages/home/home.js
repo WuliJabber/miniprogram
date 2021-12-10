@@ -20,7 +20,9 @@ Page({
             {id:111,name:'curry',age:29},
             {id:112,name:'hgd',age:24}
         ],
-        counter:0
+        counter:0,
+        // 获取
+        nowTime : new Date().toLocaleString()
     },
     add(){
         // console.log('sss')
@@ -41,8 +43,12 @@ Page({
     /**
      * 生命周期函数--监听页面加载
      */
-    onLoad: function (options) {
-
+    onLoad(options) {
+        setInterval(()=>{
+            this.setData({
+                nowTime:new Date().toLocaleString()
+            })
+        },1000)
     },
 
     /**

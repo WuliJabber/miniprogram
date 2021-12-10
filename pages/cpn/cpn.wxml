@@ -1,0 +1,29 @@
+<!--pages/cpn/cpn.wxml-->
+<!-- 测试组件开发 -->
+<my-cpn></my-cpn>
+<!-- 传递数据/样式 -->
+<my-prop title="hahah"/>
+<my-prop title="heheheh"/>
+<my-prop/>
+<!-- 组件内发送事件 -->
+<view>当前计数：{{counter}}</view>
+<my-event bind:add='add'></my-event>
+<!-- tab-control -->
+<tab-control titles="{{['衣服','鞋子','裤子']}}" bind:itemClick='itemClick'/>
+<!-- 在外部修改组件内的数据，通过获取组件对象完成 -->
+<button size="mini" bind:tap="handleCpn">修改组件内计数</button>
+<my-sel id="sel-id"></my-sel>
+<!-- 单个插槽 -->
+<my-slot>
+<button size="mini">按钮</button>
+<text>hahah </text>
+<view>heheheh</view>
+</my-slot>
+<!-- 多个插槽 -->
+<!-- 使用方法  1 加上插槽的名字
+              2 在my-mslot.js里加上opitions属性
+ -->
+<my-mslot>
+<button size="mini" slot="slot1">按钮</button>
+<slider slot="slot2" value="30"></slider>
+</my-mslot>

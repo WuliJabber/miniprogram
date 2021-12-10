@@ -1,7 +1,11 @@
 {
     "pages": [
+        "pages/cpn/cpn",
+        "pages/things/things",
         "pages/home/home",
-        "pages/about/about"
+        "pages/about/about",
+        "pages/test/test",
+        "pages/button/button"
     ],
     "sitemapLocation": "sitemap.json",
     "window": {
@@ -24,7 +28,19 @@
                 "text": "分类",
                 "iconPath": "./assets/tabbar/tabbar_catgory.png",
                 "selectedIconPath": "./assets/tabbar/tabbar_catgory_active.png"
-                }
+            },
+            {
+                "pagePath": "pages/test/test",
+                "text": "text组件",
+                "iconPath": "./assets/tabbar/tabbar_catgory.png",
+                "selectedIconPath": "./assets/tabbar/tabbar_catgory_active.png"
+            },
+            {
+                "pagePath": "pages/button/button",
+                "text": "button",
+                "iconPath": "./assets/tabbar/tabbar_catgory.png",
+                "selectedIconPath": "./assets/tabbar/tabbar_catgory_active.png"
+            }
         ],
         "selectedColor": "#ff0000"
     }

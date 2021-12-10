@@ -1,0 +1,30 @@
+<!--pages/test/test.wxml-->
+<!-- <text>pages/test/test.wxml</text> -->
+<!-- text组件，文本显示 行内元素 不会独占一行 -->
+<text>hello world\n</text>
+<text>miniprogram\n</text>
+<!-- 默认情况下，text中的文本长按是不可选中的 -->
+<!-- 加上selectable属性 -->
+<text selectable>黄国栋是帅哥\n</text>
+<!-- space 决定文本空格大小 -->
+<text space="emsp">hello world\n</text>
+<text space="ensp">hello world\n</text>
+<text space="nbsp">hello world\n</text>
+<text>hello world\n</text>
+<!-- decode 是否解码文本 -->
+<text decode>5 &gt; 3</text>
+
+<view>-----------scroll view 组件---------</view>
+<!-- scroll view 可实现局部滚动 -->
+<!-- 水平滚动 scroll-x -->
+<scroll-view class="box1" scroll-x>
+    <view wx:for="{{10}}" class="item1">{{item}}</view>
+</scroll-view>
+<!-- 垂直滚动 -->
+<scroll-view class="box2" scroll-y>
+    <view wx:for="{{10}}" class="item2">{{item}}</view>
+</scroll-view>
+<!-- 绑定事件 -->
+<scroll-view class="box2" scroll-y bindscroll="handleScroll">
+    <view wx:for="{{10}}" class="item2">{{item}}</view>
+</scroll-view>

@@ -1,0 +1,36 @@
+<!--pages/button/button.wxml-->
+<!-- <text>pages/button/button.wxml</text> -->
+<!-- 基本样式 -->
+<button>按钮</button>
+<!-- size 加上后会变为行内块元素 -->
+<button size="mini">按钮</button>
+<!-- type -->
+<button size="mini" type="default">按钮</button>
+<button size="mini" type="primary">按钮</button>
+<button size="mini" type="warn">按钮</button>
+<!-- plain 镂空效果 -->
+<button size="mini" plain>按钮</button>
+<!-- disabled -->
+<button size="mini" disabled>按钮</button>
+<!-- loading -->
+<button size="mini" loading="{{isLoading}}">按钮</button>
+<!-- 改变按钮按下时的样式 -->
+<button size="mini" hover-class="pressed">按钮</button>
+<!-- open-type 用户获取一些特殊的权限 -->
+<button size="mini" open-type="getUserInfo">按钮</button>
+<view>----------input组件----------</view>
+<!-- value 决定默认值 -->
+<input value="haha"/>
+<!-- type 表示在点输入框时弹出的键盘的种类（文本/数字/身份证） -->
+<input type="idcard"/>
+<!-- password 暗文 -->
+<input password/>
+<!-- palceholder  站位文字-->
+<input placeholder="请输入文字" />
+<!-- confirm-type 键盘右下角的风格 -->
+<input confirm-type="done"/>
+<!-- input绑定事件 -->
+<!-- handleInput 输入时触发   handleFocus焦距时触发 handleBlur失去聚焦触发 -->
+<input bindinput="handleInput"
+        bindfocus="handleFocus"
+        bindblur="handleBlur"/>

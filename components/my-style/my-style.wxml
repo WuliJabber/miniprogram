@@ -1,0 +1,3 @@
+<!--components/my-style/my-style.wxml-->
+<text>components/my-style/my-style.wxml</text>
+<!-- 组件内的样式和pages里的样式不会相互影响  -->

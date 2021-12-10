@@ -1,0 +1,9 @@
+/* pages/button/button.wxss */
+.pressed{
+    background-color: green;
+    color: honeydew;
+}
+input{
+    border: 1px solid red;
+    margin: 10px 30px;
+}

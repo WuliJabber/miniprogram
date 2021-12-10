@@ -1,1 +1,10 @@
 /* pages/about/about.wxss */
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: hotpink;
+}
+.hover_class{
+    background-color: orange;
+    font-size: 30px;
+}

@@ -1,13 +1,15 @@
 <!--pages/home/home.wxml-->
+<view>{{nowTime}}</view>
 <view>hello {{name}}</view>
 <view>年龄：{{age}}</view>
+<view>刘彤怡是{{age>=18? '成年人':'未成年人'}}</view>
 <!-- 循环 wx：for -->
 <view wx:for="{{students}}">{{item.name}} {{item.age}}</view>
 <!-- 事件监听 -->
 <view>当前计数{{counter}}</view>
 <button size="mini" bindtap="add">+</button>
 <button size="mini" bindtap="sub">-</button>
-<view>刘彤怡是笨蛋</view>
+<view>刘彤怡是美女</view>
 <button size="mini" 
         open-type="getUserInfo" 
         bindgetuserinfo="getUserInfo">获取用户信息</button>
